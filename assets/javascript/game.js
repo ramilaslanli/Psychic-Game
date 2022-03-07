@@ -22,7 +22,7 @@ function logKey(a) {
     if (a.key == "Enter") {
         if (document.getElementById('inp').value == answer) {
             wins++
-            document.getElementById('wins').innerHTML = wins;
+            document.getElementById('wins').textContent = wins;
             document.getElementById('guess_left').innerHTML -= 1;
             document.getElementById('guess').innerHTML += document.getElementById('inp').value + " "
             document.getElementById('guess_left').innerHTML = 10
